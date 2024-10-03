@@ -1,0 +1,41 @@
+{
+  "name": "gcp-nel-ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "npx next build",
+    "build-storybook": "npx storybook build",
+    "dev": "npx next dev",
+    "format": "npx prettier --write \"src/**/*.{ts,tsx}\"",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" --fix",
+    "start": "npx next start",
+    "storybook": "npx storybook dev -p 6006",
+    "test-storybook": "npx test-storybook",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "next": "14.2.14",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^2.0.2",
+    "@storybook/addon-essentials": "^8.3.4",
+    "@storybook/addon-interactions": "^8.3.4",
+    "@storybook/addon-links": "^8.3.4",
+    "@storybook/addon-onboarding": "^8.3.4",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.5",
+    "@storybook/react-webpack5": "^8.3.4",
+    "@storybook/test": "^8.3.4",
+    "@storybook/test-runner": "^0.19.1",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.14",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

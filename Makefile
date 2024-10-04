@@ -21,9 +21,15 @@ clean-install:
 	npm ci
 
 # Lint and Format task
-lint-format:
-	npm run lint
+format-lint: format lint
+
+# Format task
+format:
 	npm run format
+
+# Lint task
+lint:
+	npm run lint
 
 # Start production server task
 start:

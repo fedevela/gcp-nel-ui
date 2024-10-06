@@ -1,7 +1,8 @@
 import { fn } from "@storybook/test";
+import { Meta, StoryObj } from "@storybook/react";
 import { Header } from "../src/components/Header";
 
-const headerStory = {
+const headerStory: Meta<typeof Header> = {
   title: "Example/Header",
   component: Header,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
@@ -17,7 +18,7 @@ const headerStory = {
   },
 };
 
-export const LoggedIn = {
+export const LoggedIn: StoryObj<typeof Header> = {
   args: {
     user: {
       name: "Jane Doe",
@@ -25,6 +26,6 @@ export const LoggedIn = {
   },
 };
 
-export const LoggedOut = {};
+export const LoggedOut: StoryObj<typeof Header> = {};
 
 export default headerStory;

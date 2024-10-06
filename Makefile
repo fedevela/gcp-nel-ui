@@ -10,7 +10,7 @@ build:
 	npm run build-storybook
 
 # Deep clean install task
-deep-clean-install-and-lint-format: clean install build lint-format
+deep-clean-install-and-format-lint: clean install build format-lint
 
 # Install task
 install:
